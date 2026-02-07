@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "URL Redirector",
+  "version": "1.0",
+  "description": "Allows users to set certain URLs to redirect to other URLs.",
+  "permissions": [
+    "declarativeNetRequest",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "url-redirector@example.com"
+    }
+  }
+}

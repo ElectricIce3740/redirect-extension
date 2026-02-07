@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>URL Redirector Options</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>URL Redirector</h1>
+
+  <div class="form-container">
+    <h2>Add New Redirect</h2>
+    <div class="input-group">
+      <label for="source">Source URL Pattern (e.g., *newyorktimes.com*):</label>
+      <input type="text" id="source" placeholder="*newyorktimes.com*">
+    </div>
+    <div class="input-group">
+      <label for="destination">Destination URL:</label>
+      <input type="text" id="destination" placeholder="https://focus.com">
+    </div>
+    <button id="add-btn">Add Redirect</button>
+  </div>
+
+  <div class="list-container">
+    <h2>Current Redirects</h2>
+    <ul id="redirect-list">
+      <!-- Redirects will be listed here -->
+    </ul>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
